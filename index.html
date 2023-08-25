@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +28,33 @@
                 <input class="py-2 px-4 rounded-md w-full bg-slate-800 outline-none focus:outline focus:outline-slate-500" type="text" placeholder="Enter ingredients here...">
             </div>
             <button class="border border-slate-700 px-4 py-2 font-semibold text-lg transition-colors duration-500 ease-in-out rounded-lg mt-12 hover:bg-slate-100 hover:text-slate-900 hover:shadow-lg hover:shadow-slate-200/10">Get Results</button>
-            
+        </form>
+        <h3 class="text-center text-lg font-semibold mt-12">OR try Uploading the <a href="#image" class="text-cyan-400 hover:underline hover:underline-offset-4">Image</a></h3>
+        <form action="" class="px-36" id="img_form">
+            <div class="py-36 px-8 border-dashed border border-slate-50 rounded-lg flex flex-col justify-center items-center my-12">
+                <label for="">
+                    <span id="file_submit" class="text-cyan-400 cursor-pointer hover:underline hover:underline-offset-4">Upload a Image</span> of size upto 10MB
+                </label>
+                </img>
+                <input type="file" class="hidden" id="file" accept=".png,.jpg">
+                <button class="border border-slate-700 px-4 py-2 font-semibold text-lg transition-colors duration-500 ease-in-out rounded-lg mt-12 hover:bg-slate-100 hover:text-slate-900 hover:shadow-lg hover:shadow-slate-200/10">Get Results</button>
+            </div>
         </form>
     </div>
+    <div>
+        <img src="" alt="">
+        <h3 class="text-lg font-sm text-center" id="res">Res Here</h3>
+    </div>
+    <script>
+        // if(res.attributes.src){
+        //     res.attributes.src = file.value
+        //     res.style.display="block"
+        // }
+        // else{
+        //     res.style.display="none"
+        // }
+    </script>
+    <script src="index.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
